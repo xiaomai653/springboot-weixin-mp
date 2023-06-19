@@ -1,0 +1,57 @@
+server:
+  port: 8080
+
+# 微信公众号配置
+wechat:
+  mp:
+    app-id: your-app-id
+    app-secret: your-app-secret
+    token: 123456
+
+# 高德天气配置
+gaode:
+  server: https://restapi.amap.com/
+  key: yourKey
+
+# 天行数据配置
+tianxing:
+  server: http://api.tianapi.com
+  key: yourKey
+
+# knife4j文档配置
+knife4j:
+  enable: true
+  openapi:
+    title: 微信公众号
+    description: 这是个springboot的测试demo
+    email: 1271899086@qq.com
+    concat: 小麦
+    version: v4.0
+    license: Apache 2.0
+    group:
+      test1:
+        group-name: 微信api
+        api-rule: package
+        api-rule-resources:
+          - com.springboot.rest
+
+# spring 配置
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB     #单个文件最大限制
+      max-request-size: 50MB  #多个文件最大限制
+
+# 日志级别
+logging:
+  level:
+    com.springboot: debug
+
+# gpt配置
+open:
+  ai:
+    #密钥
+    key: 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
+    #超时时间
+    request:
+      timeout: 10000
